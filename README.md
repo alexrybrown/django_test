@@ -57,7 +57,7 @@ Note:
 10. Create Database.::
 
         (django_test)$ sudo su - postgres
-        (django_test)$ psql
+        $ psql
         postgres=# CREATE DATABASE django_test;
         postgres=# CREATE USER django_test_user with PASSWORD 'password'; 
         postgres=# ALTER ROLE django_test_user SET client_encoding TO 'utf8';
@@ -65,7 +65,7 @@ Note:
         postgres=# ALTER ROLE django_test_user SET timezone TO 'UTC';
         postgres=# GRANT ALL PRIVILEGES ON DATABASE django_test TO django_test_user;
         postgres=# \q
-        (django_test)$ exit
+        $ exit
         
 11.  Start the runserver.::
 
