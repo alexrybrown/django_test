@@ -63,7 +63,7 @@ Note:
         postgres=# ALTER ROLE django_test_user SET client_encoding TO 'utf8';
         postgres=# ALTER ROLE django_test_user SET default_transaction_isolation TO 'read committed';
         postgres=# ALTER ROLE django_test_user SET timezone TO 'UTC';
-        postgres=# ALTER USER django CREATEDB;
+        postgres=# ALTER USER django_test CREATEDB;
         postgres=# GRANT ALL PRIVILEGES ON DATABASE django_test TO django_test_user;
         postgres=# \q
         $ exit
